@@ -1,0 +1,184 @@
+/* Luxe Lights Unisex Salon - Luxury Custom Styles */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08080b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262633;
+  border-radius: 9999px;
+  border: 2px solid #08080b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cfa942;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #13131b;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ab862b;
+  border-radius: 4px;
+}
+
+/* Service Tab Buttons */
+.service-tab-btn {
+  background: rgba(26, 26, 36, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #a3a3a3;
+  backdrop-filter: blur(8px);
+}
+
+.service-tab-btn:hover {
+  border-color: rgba(223, 190, 101, 0.4);
+  color: #f7e7b4;
+}
+
+.service-tab-btn.active-tab {
+  background: linear-gradient(135deg, #cfa942, #ab862b);
+  color: #08080b;
+  border-color: #edd58c;
+  box-shadow: 0 4px 20px rgba(207, 169, 66, 0.35);
+  font-weight: 700;
+}
+
+/* Gallery Filter Tabs */
+.gal-tab {
+  background: rgba(26, 26, 36, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #a3a3a3;
+}
+
+.gal-tab:hover {
+  border-color: rgba(223, 190, 101, 0.4);
+  color: #f7e7b4;
+}
+
+.gal-tab.active-tab {
+  background: #dfbe65;
+  color: #08080b;
+  font-weight: 700;
+}
+
+/* Transformation Tabs */
+.trans-tab {
+  background: rgba(26, 26, 36, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #a3a3a3;
+  transition: all 0.3s ease;
+}
+
+.trans-tab:hover {
+  color: #f7e7b4;
+  border-color: rgba(223, 190, 101, 0.3);
+}
+
+.trans-tab.active-trans-tab {
+  background: rgba(223, 190, 101, 0.15);
+  border-color: #dfbe65;
+  color: #dfbe65;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(223, 190, 101, 0.2);
+}
+
+/* Before & After Slider Interactions */
+#ba-slider-container {
+  touch-action: pan-y;
+  cursor: ew-resize;
+}
+
+#ba-before-wrap {
+  will-change: width;
+}
+
+/* Service Card Hover & Card Gradients */
+.service-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(223, 190, 101, 0.4);
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(223, 190, 101, 0.12);
+}
+
+/* Luxury Shimmer Border */
+@keyframes gold-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-gold {
+  background: linear-gradient(90deg, rgba(223, 190, 101, 0) 0%, rgba(223, 190, 101, 0.3) 50%, rgba(223, 190, 101, 0) 100%);
+  background-size: 200% 100%;
+  animation: gold-shimmer 4s infinite;
+}
+
+/* Ambient Subtle Zoom for Hero */
+@keyframes subtle-zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-subtle-zoom {
+  animation: subtle-zoom 25s ease-in-out infinite;
+}
+
+/* Smooth Image Reveal */
+.img-reveal {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+/* Glass Navigation & Mobile Drawer (~10% Subtly Darkened for Perfect Balance & Readability) */
+#main-header {
+  background-color: rgba(10, 10, 14, 0.88) !important;
+  backdrop-filter: blur(20px) brightness(0.90) !important;
+  -webkit-backdrop-filter: blur(20px) brightness(0.90) !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.20) !important;
+}
+
+#mobile-menu {
+  background-color: rgba(10, 10, 14, 0.92) !important;
+  backdrop-filter: blur(24px) brightness(0.90) !important;
+  -webkit-backdrop-filter: blur(24px) brightness(0.90) !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25) !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8) !important;
+}
+
+#mobile-menu a {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+#mobile-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: #f7df94 !important;
+}
+
+#mobile-menu a.active-mobile-link {
+  background: rgba(212, 175, 55, 0.15) !important;
+  color: #edd58c !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+}

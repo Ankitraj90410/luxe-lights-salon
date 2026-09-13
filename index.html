@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxe Lights Unisex Salon | Premier Luxury Hair, Skin & Bridal Studio Kharar</title>
+  <meta name="description" content="Experience world-class hair artistry, hydra-facials, bridal trousseau styling, and men's luxury grooming at Luxe Lights Unisex Salon, Kharar. Book your appointment today." />
+  <meta name="keywords" content="Luxe Lights Unisex Salon, Kharar Salon, Best Salon in Kharar Mohali, Nanoplastia Kharar, Balayage Mohali, Bridal Makeup Kharar, SBP Homes Salon" />
+
+  <!-- Favicon (Official Luxe Lights Medallion) -->
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+
+    <!-- Open Graph & Social Meta -->
+  <meta property="og:title" content="Luxe Lights Unisex Salon | Redefining Luxury in Kharar" />
+  <meta property="og:description" content="Kharar's top-rated 4.9★ luxury unisex salon. Premium hair transformations, medi-facials, and bridal styling." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            noir: {
+              950: '#08080b',
+              900: '#0e0e13',
+              850: '#13131b',
+              800: '#1a1a24',
+              700: '#262633',
+              600: '#38384a',
+            },
+            gold: {
+              300: '#f7e7b4',
+              400: '#edd58c',
+              500: '#dfbe65',
+              600: '#cfa942',
+              700: '#ab862b',
+              glow: 'rgba(223, 190, 101, 0.25)',
+            },
+            champagne: '#f8f4ec',
+            alabaster: '#faf8f5',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            cormorant: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'luxury': '0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(207, 169, 66, 0.08)',
+            'gold-glow': '0 0 25px rgba(223, 190, 101, 0.3)',
+            'gold-sm': '0 0 15px rgba(223, 190, 101, 0.2)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* CSS spec fix: overflow-x: clip ensures sticky positioning functions perfectly */
+    html, body {
+      overflow-x: clip;
+    }
+    #main-header {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .hero-slide {
+      transition: opacity 0.8s ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="bg-noir-950 text-neutral-200 font-sans antialiased selection:bg-gold-500 selection:text-noir-950">
+
+  <!-- Top Announcement Ribbon -->
+  <div class="bg-gradient-to-r from-noir-900 via-noir-850 to-noir-900 border-b border-gold-600/20 text-xs py-2 px-4 text-neutral-300">
+    <div class="max-w-7xl mx-auto flex flex-row items-center justify-between gap-2 text-left">
+      <div class="flex items-center gap-2">
+        <span id="ribbon-status-dot" class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+        <span class="text-gold-400 font-medium whitespace-nowrap">Luxe Lights Unisex Salon</span>
+        <span class="hidden md:inline text-neutral-500">|</span>
+        <span class="hidden md:inline text-neutral-300 truncate">SCO 22, Opp Khera Enclave, Kharar</span>
+      </div>
+      <div class="flex items-center gap-3 sm:gap-4 text-xs shrink-0">
+        <span class="hidden sm:flex items-center gap-1.5 text-neutral-300">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-gold-500"></i>
+          <span>9:00 AM – 9:00 PM</span>
+        </span>
+        <a href="tel:+917986069459" class="flex items-center gap-1 text-gold-400 hover:text-gold-300 transition-colors font-medium">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>079860 69459</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Sticky Navigation Header (Stuck to top on scroll for both desktop and mobile) -->
+  <header id="main-header" class="sticky top-0 z-50 bg-[#0a0a0e]/88 backdrop-blur-xl border-b border-gold-500/20 transition-all duration-300 shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        
+        <!-- Official Logo Artwork (Clean Medallion, No added CSS border/glow ring) -->
+        <a href="#hero" class="flex items-center gap-3 group shrink-0 whitespace-nowrap" aria-label="Luxe Lights Home">
+          <img src="assets/logo.png" alt="Luxe Lights Unisex Salon" class="w-11 h-11 rounded-full object-contain shrink-0 drop-shadow-md group-hover:scale-105 transition-transform" />
+          <div class="flex flex-col justify-center leading-none">
+            <span class="font-serif text-base tracking-[0.14em] font-bold text-white uppercase group-hover:text-gold-300 transition-colors whitespace-nowrap">LUXE LIGHTS</span>
+            <div class="flex items-center gap-1 text-[9px] font-semibold text-gold-400 tracking-[0.14em] uppercase mt-0.5 select-none whitespace-nowrap">
+              <span>Unisex</span>
+              <span>Salon</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden lg:flex items-center gap-4 xl:gap-6">
+          <a href="#about" class="whitespace-nowrap text-xs xl:text-sm font-semibold text-neutral-200 hover:text-gold-400 transition-colors">About</a>
+          <a href="#services" class="whitespace-nowrap text-xs xl:text-sm font-semibold text-neutral-200 hover:text-gold-400 transition-colors">Services</a>
+          <a href="#transformations" class="whitespace-nowrap text-xs xl:text-sm font-semibold text-neutral-200 hover:text-gold-400 transition-colors">Results</a>
+          <a href="#rate-calculator" class="whitespace-nowrap text-xs xl:text-sm font-semibold text-neutral-200 hover:text-gold-400 transition-colors">Custom Package</a>
+          <a href="#bridal" class="whitespace-nowrap text-xs xl:text-sm font-semibold text-gold-400 hover:text-gold-300 transition-colors">Bridal</a>
+          <a href="#gallery" class="whitespace-nowrap text-xs xl:text-sm font-semibold text-neutral-200 hover:text-gold-400 transition-colors">Gallery</a>
+          <a href="#reviews" class="whitespace-nowrap text-xs xl:text-sm font-semibold text-neutral-200 hover:text-gold-400 transition-colors">Reviews</a>
+          <a href="#contact" class="whitespace-nowrap text-xs xl:text-sm font-semibold text-neutral-200 hover:text-gold-400 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Header CTAs (WhatsApp Deep Link & Book Modal Button) -->
+        <div class="hidden sm:flex items-center gap-2.5 shrink-0">
+          <a href="https://wa.me/917986069459?text=Hi%20Luxe%20Lights%20Salon!%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="whitespace-nowrap px-3.5 py-1.5 rounded-full border border-emerald-500/40 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 text-xs font-semibold flex items-center gap-1.5 transition-all">
+            <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+            <span>WhatsApp</span>
+          </a>
+
+          <button onclick="openBookingModal()" class="whitespace-nowrap px-4 py-1.5 rounded-full bg-gradient-to-r from-gold-600 via-gold-500 to-gold-400 text-noir-950 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm hover:shadow-gold-glow hover:scale-[1.02] active:scale-[0.98] transition-all">
+            <i data-lucide="calendar" class="w-3.5 h-3.5 shrink-0"></i>
+            <span>Book Appointment</span>
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-neutral-300 hover:text-gold-400 hover:bg-noir-800 transition-colors" aria-label="Toggle Navigation">
+          <i data-lucide="menu" id="menu-icon-open" class="w-6 h-6"></i>
+          <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+        </button>
+
+      </div>
+
+      <!-- Mobile Drawer Menu (Exact Same Naming and Theme as Desktop) -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-[#0a0a0e]/92 backdrop-blur-2xl border-b border-gold-500/25 px-6 py-6 space-y-4 shadow-2xl">
+        <div class="flex flex-col space-y-2">
+          <a href="#about" onclick="toggleMobileMenu()" class="text-sm font-semibold text-white hover:text-gold-300 py-2.5 px-3 rounded-lg hover:bg-noir-850 transition-colors flex items-center justify-between">
+            <span>About</span>
+          </a>
+          <a href="#services" onclick="toggleMobileMenu()" class="text-sm font-semibold text-white hover:text-gold-300 py-2.5 px-3 rounded-lg hover:bg-noir-850 transition-colors flex items-center justify-between">
+            <span>Services</span>
+          </a>
+          <a href="#transformations" onclick="toggleMobileMenu()" class="text-sm font-semibold text-white hover:text-gold-300 py-2.5 px-3 rounded-lg hover:bg-noir-850 transition-colors flex items-center justify-between">
+            <span>Results</span>
+          </a>
+          <a href="#rate-calculator" onclick="toggleMobileMenu()" class="text-sm font-semibold text-white hover:text-gold-300 py-2.5 px-3 rounded-lg hover:bg-noir-850 transition-colors flex items-center justify-between">
+            <span>Custom Package</span>
+          </a>
+          <a href="#bridal" onclick="toggleMobileMenu()" class="text-sm font-semibold text-gold-400 hover:text-gold-300 py-2.5 px-3 rounded-lg hover:bg-noir-850 transition-colors flex items-center justify-between">
+            <span>Bridal</span>
+          </a>
+          <a href="#gallery" onclick="toggleMobileMenu()" class="text-sm font-semibold text-white hover:text-gold-300 py-2.5 px-3 rounded-lg hover:bg-noir-850 transition-colors flex items-center justify-between">
+            <span>Gallery</span>
+          </a>
+          <a href="#reviews" onclick="toggleMobileMenu()" class="text-sm font-semibold text-white hover:text-gold-300 py-2.5 px-3 rounded-lg hover:bg-noir-850 transition-colors flex items-center justify-between">
+            <span>Reviews</span>
+          </a>
+          <a href="#contact" onclick="toggleMobileMenu()" class="text-sm font-semibold text-white hover:text-gold-300 py-2.5 px-3 rounded-lg hover:bg-noir-850 transition-colors flex items-center justify-between">
+            <span>Contact</span>
+          </a>
+        </div>
+
+        <div class="pt-4 border-t border-noir-700/60 flex flex-col gap-3">
+          <button onclick="openBookingModal(); toggleMobileMenu();" class="w-full py-3 rounded-xl bg-gradient-to-r from-gold-600 to-gold-500 text-noir-950 font-bold text-sm tracking-wide text-center flex items-center justify-center gap-2 shadow-gold-sm">
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+            <span>Book Appointment Online</span>
+          </button>
+          <a href="https://wa.me/917986069459?text=Hi%20Luxe%20Lights%20Salon!%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 font-semibold text-sm text-center flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Chat on WhatsApp (079860 69459)</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+  <!-- 5-Slide Rotating Hero Image & Headline Carousel -->
+  <section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20 px-4 sm:px-6 lg:px-8">
+    
+    <!-- Slides Container -->
+    <div id="hero-carousel" class="absolute inset-0 z-0">
+      
+      <!-- Slide 1: Signature Hair Artistry -->
+      <div class="hero-slide active-slide absolute inset-0 opacity-100 transition-opacity duration-1000">
+        <img src="assets/hair_styling.jpg" alt="Luxe Lights Hair Artistry" class="w-full h-full object-cover object-center opacity-30 filter scale-105 transform" />
+        <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/80 to-noir-950/60"></div>
+      </div>
+
+      <!-- Slide 2: Medi-Facial & Korean Glass Skin -->
+      <div class="hero-slide absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-1000">
+        <img src="assets/gold_facial.jpg" alt="Korean Glass Skin Facial" class="w-full h-full object-cover object-center opacity-30 filter scale-105 transform" />
+        <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/80 to-noir-950/60"></div>
+      </div>
+
+      <!-- Slide 3: Royal Indian Bridal Artistry -->
+      <div class="hero-slide absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-1000">
+        <img src="assets/indian_bride.jpg" alt="Royal Bridal Couture" class="w-full h-full object-cover object-center opacity-30 filter scale-105 transform" />
+        <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/80 to-noir-950/60"></div>
+      </div>
+
+      <!-- Slide 4: Gentlemen Royal Grooming -->
+      <div class="hero-slide absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-1000">
+        <img src="assets/indian_groom.jpg" alt="Gentlemen Grooming & Beard Architecture" class="w-full h-full object-cover object-center opacity-30 filter scale-105 transform" />
+        <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/80 to-noir-950/60"></div>
+      </div>
+
+      <!-- Slide 5: Unhurried Luxury & Spa Suite -->
+      <div class="hero-slide absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-1000">
+        <img src="assets/salon_interior.jpg" alt="Luxe Lights Salon Sanctuary" class="w-full h-full object-cover object-center opacity-30 filter scale-105 transform" />
+        <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/80 to-noir-950/60"></div>
+      </div>
+
+    </div>
+
+    <!-- Ambient Glow Accent Circles -->
+    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gold-500/15 rounded-full blur-3xl pointer-events-none z-0"></div>
+
+    <!-- Hero Content Dynamic Box -->
+    <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center">
+      
+      <!-- Slide Dynamic Headline -->
+      <div id="hero-text-container" class="min-h-[220px] sm:min-h-[240px] flex flex-col justify-center items-center">
+        <h1 id="hero-title" class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-[1.12] mb-6 transition-all duration-500">
+          Look Captivating. <br />
+          <span class="bg-gradient-to-r from-gold-300 via-gold-400 to-gold-600 bg-clip-text text-transparent italic font-normal">
+            Be Your Own Kind of Beautiful.
+          </span>
+        </h1>
+
+        <!-- Slide Dynamic Subtitle -->
+        <p id="hero-subtitle" class="max-w-2xl text-base sm:text-lg text-neutral-300 font-normal leading-relaxed mb-8 transition-all duration-500">
+          Experience couture hair transformations, glow-boosting hydra-facials, and bespoke bridal trousseau styling. Handcrafted by certified master artists in Kharar.
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-10">
+        <button onclick="openBookingModal()" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-gold-600 via-gold-500 to-gold-400 text-noir-950 font-bold text-sm tracking-wider uppercase shadow-gold-glow hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          <span>Book Your Appointment</span>
+        </button>
+
+        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-noir-850/80 border border-gold-500/40 text-neutral-200 hover:text-white hover:border-gold-400 hover:bg-noir-800 font-semibold text-sm tracking-wider uppercase transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm">
+          <i data-lucide="compass" class="w-4 h-4 text-gold-400"></i>
+          <span>Explore Services</span>
+        </a>
+
+        <a href="https://wa.me/917986069459?text=Hello%20Luxe%20Lights!%20I%20want%20to%20consult%20with%20a%20stylist." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-4 rounded-full bg-emerald-500/15 border border-emerald-500/50 text-emerald-300 hover:bg-emerald-500/25 font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+          <span>WhatsApp Stylist</span>
+        </a>
+      </div>
+
+      <!-- Carousel Navigation Controls & Dots -->
+      <div class="flex items-center gap-6 mb-8">
+        <button onclick="prevHeroSlide()" class="p-2.5 rounded-full bg-noir-900/80 border border-white/10 hover:border-gold-400 text-neutral-300 hover:text-gold-300 backdrop-blur-sm transition-all" aria-label="Previous Slide">
+          <i data-lucide="chevron-left" class="w-5 h-5"></i>
+        </button>
+
+        <div class="flex items-center gap-2" id="hero-dots">
+          <button onclick="goHeroSlide(0)" class="w-8 h-2 rounded-full bg-gold-400 transition-all duration-300" aria-label="Slide 1"></button>
+          <button onclick="goHeroSlide(1)" class="w-2 h-2 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300" aria-label="Slide 2"></button>
+          <button onclick="goHeroSlide(2)" class="w-2 h-2 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300" aria-label="Slide 3"></button>
+          <button onclick="goHeroSlide(3)" class="w-2 h-2 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300" aria-label="Slide 4"></button>
+          <button onclick="goHeroSlide(4)" class="w-2 h-2 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300" aria-label="Slide 5"></button>
+        </div>
+
+        <button onclick="nextHeroSlide()" class="p-2.5 rounded-full bg-noir-900/80 border border-white/10 hover:border-gold-400 text-neutral-300 hover:text-gold-300 backdrop-blur-sm transition-all" aria-label="Next Slide">
+          <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Quick Trust Indicators Bar -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 w-full max-w-4xl pt-8 border-t border-gold-600/20">
+        
+        <div class="flex items-center gap-3 p-3 rounded-2xl bg-noir-900/60 border border-white/5 backdrop-blur-sm">
+          <div class="w-10 h-10 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center shrink-0">
+            <i data-lucide="star" class="w-5 h-5 text-gold-400 fill-gold-400"></i>
+          </div>
+          <div class="text-left">
+            <div class="text-white font-bold text-base leading-tight">4.9 / 5.0</div>
+            <div class="text-neutral-400 text-xs">783 Google Reviews</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-3 rounded-2xl bg-noir-900/60 border border-white/5 backdrop-blur-sm">
+          <div class="w-10 h-10 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center shrink-0">
+            <i data-lucide="award" class="w-5 h-5 text-gold-400"></i>
+          </div>
+          <div class="text-left">
+            <div class="text-white font-bold text-base leading-tight">Master Academy</div>
+            <div class="text-neutral-400 text-xs">Certified Educators</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-3 rounded-2xl bg-noir-900/60 border border-white/5 backdrop-blur-sm">
+          <div class="w-10 h-10 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center shrink-0">
+            <i data-lucide="shield-check" class="w-5 h-5 text-gold-400"></i>
+          </div>
+          <div class="text-left">
+            <div class="text-white font-bold text-base leading-tight">100% Hygienic</div>
+            <div class="text-neutral-400 text-xs">Premium Salon Care</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-3 rounded-2xl bg-noir-900/60 border border-white/5 backdrop-blur-sm">
+          <div class="w-10 h-10 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center shrink-0">
+            <i data-lucide="gem" class="w-5 h-5 text-gold-400"></i>
+          </div>
+          <div class="text-left">
+            <div class="text-white font-bold text-base leading-tight">Prestige Products</div>
+            <div class="text-neutral-400 text-xs">L’Oréal & Olaplex</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Live Status & Quick Details Strip (Client Favorite - Valet Parking Replaced with Ample Free Front Parking) -->
+  <section class="border-y border-gold-600/20 bg-noir-900/95 py-4 px-4 relative z-10 shadow-lg">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-around gap-6 text-sm">
+      <div class="flex items-center gap-3">
+        <div id="status-badge-circle" class="w-9 h-9 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center shrink-0">
+          <span id="status-badge-dot" class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+        </div>
+        <div>
+          <span id="status-badge-label" class="text-emerald-400 font-semibold uppercase text-xs tracking-wider">Open Today</span>
+          <div class="text-white font-semibold text-xs sm:text-sm">9:00 AM – 9:00 PM</div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+          <i data-lucide="map-pin" class="w-4 h-4"></i>
+        </div>
+        <div>
+          <span class="text-gold-400 font-semibold uppercase text-xs tracking-wider">Location</span>
+          <div class="text-white font-semibold text-xs sm:text-sm">Near SBP Homes, Nijjar Road, Kharar</div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+          <i data-lucide="phone-call" class="w-4 h-4"></i>
+        </div>
+        <div>
+          <span class="text-gold-400 font-semibold uppercase text-xs tracking-wider">Direct Hotline</span>
+          <a href="tel:+917986069459" class="text-white font-semibold text-xs sm:text-sm hover:text-gold-400 transition-colors">079860 69459</a>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+          <i data-lucide="car" class="w-4 h-4"></i>
+        </div>
+        <div>
+          <span class="text-gold-400 font-semibold uppercase text-xs tracking-wider">Convenience</span>
+          <div class="text-white font-semibold text-xs sm:text-sm">Ample Free Front Parking</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- About Section (Balanced Dual-Image Showcase & 4+ Years Badge) -->
+  <section id="about" class="scroll-mt-20 py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
+      
+      <!-- Balanced Dual-Image Showcase (Flex Stretched to Match Right Column Height) -->
+      <div class="lg:col-span-6 flex flex-col justify-between gap-6">
+        
+        <!-- Main Upper Image (Salon Interior & Styling Floor) -->
+        <div class="relative mx-auto max-w-md lg:max-w-none w-full flex-1">
+          <div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-gold-500/20 to-gold-700/20 blur-xl pointer-events-none"></div>
+          
+          <div class="relative h-full min-h-[360px] lg:min-h-[440px] rounded-2xl overflow-hidden border border-gold-600/30 shadow-2xl bg-noir-900 group flex flex-col justify-end">
+            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80" alt="Luxe Lights Salon Styling Floor Kharar" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/20 to-transparent pointer-events-none"></div>
+            
+            <!-- Floating Overlay Card -->
+            <div class="relative z-10 m-5 p-4 rounded-xl bg-noir-900/90 backdrop-blur-md border border-gold-500/30 flex items-center justify-between">
+              <div>
+                <div class="text-gold-400 text-xs font-semibold uppercase tracking-wider">Unisex Salon & Academy</div>
+                <div class="text-white font-serif text-base font-bold">Private Suites For Men & Women</div>
+              </div>
+              <div class="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center text-gold-400 shrink-0">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Decorative Floating Mini-Badge (Updated to 4+ Years of Excellence) -->
+          <div class="absolute -top-5 -right-5 hidden sm:flex flex-col items-center justify-center w-28 h-28 rounded-2xl bg-noir-900 border border-gold-500/40 shadow-2xl text-center p-2 z-20">
+            <span class="font-serif text-3xl font-bold text-gold-400">4+</span>
+            <span class="text-[10px] text-neutral-300 uppercase tracking-wider font-semibold">Years</span>
+            <span class="text-[9px] text-gold-300/80 uppercase tracking-widest font-medium">Excellence</span>
+          </div>
+        </div>
+
+        <!-- Secondary Lower Image (Luxury Hair Spa & Wash Station) -->
+        <div class="relative mx-auto max-w-md lg:max-w-none w-full flex-1">
+          <div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-gold-500/15 to-gold-700/15 blur-xl pointer-events-none"></div>
+          
+          <div class="relative h-full min-h-[360px] lg:min-h-[440px] rounded-2xl overflow-hidden border border-gold-600/30 shadow-2xl bg-noir-900 group flex flex-col justify-end">
+            <img src="assets/salon_interior.jpg" alt="Luxe Lights Luxury Hair Spa & Rejuvenation Station" class="absolute inset-0 w-full h-full object-cover object-[center_35%] group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-noir-950/20 to-transparent pointer-events-none"></div>
+            
+            <!-- Floating Sub-Feature Card -->
+            <div class="relative z-10 m-5 p-4 rounded-xl bg-noir-900/90 backdrop-blur-md border border-gold-500/30 flex items-center justify-between">
+              <div>
+                <div class="text-gold-400 text-xs font-semibold uppercase tracking-wider">Premium Care & Hygiene</div>
+                <div class="text-white font-serif text-base font-bold">Pristine Salon Sanitation & Rejuvenation</div>
+              </div>
+              <div class="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center text-gold-400 shrink-0">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Text Narrative (Right Column) -->
+      <div class="lg:col-span-6 space-y-6">
+        <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-[0.25em]">
+          <span class="w-6 h-[1px] bg-gold-500"></span>
+          <span>Our Legacy & Philosophy</span>
+        </div>
+
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+          Where Artisanal Craftsmanship Meets Modern Luxury
+        </h2>
+
+        <p class="text-gold-400/90 text-sm font-serif italic">
+          "We Create Your New Look" — Official Motto, Luxe Lights Unisex Salon
+        </p>
+
+        <p class="text-neutral-300 text-base leading-relaxed">
+          At <strong class="text-gold-400 font-semibold">Luxe Lights Unisex Salon</strong>, beauty is an art form rooted in individuality and meticulous care. Located conveniently in Kharar near SBP Homes (SCO 22, Opp Khera Enclave), we have created an indulgent sanctuary designed to deliver modern styling and rejuvenation for your daily lifestyle, milestone celebrations, and Indian wedding preparations.
+        </p>
+
+        <!-- MD Callout Box with Academy Credit -->
+        <div class="p-4 rounded-2xl bg-gradient-to-r from-noir-850 to-noir-900 border border-gold-500/30 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-full bg-gold-500/15 border border-gold-500/40 flex items-center justify-center text-gold-400 shrink-0 mt-1">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <div class="space-y-1">
+            <div class="text-white font-serif text-base font-bold">Led by Managing Director Ankit Rajoria</div>
+            <p class="text-neutral-300 text-xs leading-relaxed">
+              Master stylist and director of the acclaimed <strong class="text-gold-300">Luxe Lights Unisex Salon and Academy</strong>. Every stylist on our floor is personally trained in precision geometric cutting, advanced colorimetry, expert skincare, and strict hygiene protocols.
+            </p>
+          </div>
+        </div>
+
+        <p class="text-neutral-400 text-sm leading-relaxed">
+          Whether you seek precision hair styling, global highlights, soothing scalp therapies, pre-bridal trousseau radiance, or gentle Rica waxing, our team tailors every ritual to your unique personality and skin profile.
+        </p>
+
+        <!-- Feature Points -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div class="flex items-start gap-3 p-3 rounded-xl bg-noir-900/50 border border-white/5">
+            <div class="w-6 h-6 rounded-full bg-gold-500/20 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i>
+            </div>
+            <div>
+              <h4 class="text-white text-sm font-semibold">Personalized Consultation</h4>
+              <p class="text-neutral-400 text-xs mt-0.5">Custom scalp & skin assessment before any treatment or facial service.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 rounded-xl bg-noir-900/50 border border-white/5">
+            <div class="w-6 h-6 rounded-full bg-gold-500/20 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i>
+            </div>
+            <div>
+              <h4 class="text-white text-sm font-semibold">Authentic Sealed Products</h4>
+              <p class="text-neutral-400 text-xs mt-0.5">100% original tubes & vials opened in front of you with premium salon hygiene.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 rounded-xl bg-noir-900/50 border border-white/5">
+            <div class="w-6 h-6 rounded-full bg-gold-500/20 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i>
+            </div>
+            <div>
+              <h4 class="text-white text-sm font-semibold">Private Unisex Suites</h4>
+              <p class="text-neutral-400 text-xs mt-0.5">Dedicated private styling zones for women, men, and bridal entourages.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 rounded-xl bg-noir-900/50 border border-white/5">
+            <div class="w-6 h-6 rounded-full bg-gold-500/20 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i>
+            </div>
+            <div>
+              <h4 class="text-white text-sm font-semibold">Attentive Care</h4>
+              <p class="text-neutral-400 text-xs mt-0.5">No pushy upselling. Straightforward, honest pampering.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pro Tips directly from the client's Price List Brochure -->
+        <div class="p-4 rounded-xl bg-noir-900 border border-gold-500/20 mt-4">
+          <div class="text-xs font-semibold text-gold-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            <span>Expert Tips From Our Official Salon Guide</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] text-neutral-300">
+            <div>• <strong>Hair Care:</strong> Condition your hair after every wash & eat a hair-healthy diet.</div>
+            <div>• <strong>Skin Care:</strong> Moisturize day & night and avoid hot water on face.</div>
+            <div>• <strong>Nails:</strong> Massage nails with quality petroleum jelly & avoid shaving right before pedicures.</div>
+            <div>• <strong>Waxing:</strong> Wear loose clothing post-wax and apply soothing oil after Rica wax.</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Metric Milestones (Anchoring Both Columns Symmetrically Across Full Width) -->
+    <div class="mt-14 pt-8 border-t border-gold-600/20 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="font-serif text-2xl sm:text-3xl font-bold text-gold-400">4+</div>
+        <div class="text-[11px] text-neutral-400 uppercase font-medium mt-0.5">Years Active</div>
+      </div>
+      <div>
+        <div class="font-serif text-2xl sm:text-3xl font-bold text-gold-400">10+</div>
+        <div class="text-[11px] text-neutral-400 uppercase font-medium mt-0.5">Master Stylists</div>
+      </div>
+      <div>
+        <div class="font-serif text-2xl sm:text-3xl font-bold text-gold-400">4.9★</div>
+        <div class="text-[11px] text-neutral-400 uppercase font-medium mt-0.5">783 Reviews</div>
+      </div>
+      <div>
+        <div class="font-serif text-2xl sm:text-3xl font-bold text-gold-400">100%</div>
+        <div class="text-[11px] text-neutral-400 uppercase font-medium mt-0.5">Satisfaction</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Services & Treatment Menu (Curated 6-Item Preview + Zero Rates) -->
+  <section id="services" class="scroll-mt-20 py-24 bg-noir-900/70 border-t border-gold-600/15 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-[0.25em] mb-3">
+          <span class="w-6 h-[1px] bg-gold-500"></span>
+          <span>Signature Treatments & Rituals</span>
+          <span class="w-6 h-[1px] bg-gold-500"></span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">
+          Curated Rituals For Hair, Skin & Body
+        </h2>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
+          From revitalizing hair therapies to expert skincare, explore our signature salon services. Every treatment begins with a complimentary consultation.
+        </p>
+      </div>
+
+                        <!-- Category Filter Tabs -->
+      <div class="flex items-center justify-center gap-2 sm:gap-3 flex-wrap mb-10" id="service-tabs">
+        <button onclick="filterServices('all', this)" class="service-tab-btn active-tab px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all">Curated Preview</button>
+        <button onclick="filterServices('hair', this)" class="service-tab-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all">Hair Care & Texture</button>
+        <button onclick="filterServices('facial', this)" class="service-tab-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all">Facials & Clean-Up</button>
+        <button onclick="filterServices('waxing', this)" class="service-tab-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all">Waxing & Bleach</button>
+        <button onclick="filterServices('nails', this)" class="service-tab-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all">Nails & Pedicure</button>
+        <button onclick="filterServices('bridal', this)" class="service-tab-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all">Bridal & Make UP</button>
+      </div>
+
+      <!-- Services Grid (Populated via JS - Curated 6-Item Preview) -->
+      <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Injected dynamically by app.js -->
+      </div>
+
+      <!-- View All & Scroll to Builder CTA Button -->
+      <div class="text-center mt-12">
+        <a href="#rate-calculator" class="px-8 py-4 rounded-full bg-gradient-to-r from-gold-600 via-gold-500 to-gold-400 text-noir-950 font-bold text-xs uppercase tracking-wider shadow-gold-sm hover:scale-105 transition-all inline-flex items-center gap-2">
+          <i data-lucide="layers" class="w-4 h-4 text-noir-950"></i>
+          <span>View All 113 Treatments & Build Custom Package</span>
+        </a>
+      </div>
+
+      <!-- Custom Consultation & WhatsApp Brochure Banner -->
+      <div class="mt-16 p-8 rounded-2xl bg-gradient-to-r from-noir-850 via-noir-800 to-noir-850 border border-gold-500/30 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 text-center md:text-left">
+          <h3 class="font-serif text-2xl font-bold text-white">Need a Custom Package Consultation or Event Styling?</h3>
+          <p class="text-neutral-400 text-sm max-w-xl">
+            We offer customized combo rituals for individuals, families, bridal parties, and routine grooming care. Contact our concierge directly.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 shrink-0">
+          <a href="https://wa.me/917986069459?text=Hi%20Luxe%20Lights!%20I%20would%20like%20to%20inquire%20about%20your%20services%20and%20book%20a%20consultation%20in%20Kharar." target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 hover:bg-emerald-500/30 font-semibold text-xs uppercase tracking-wider flex items-center gap-2 transition-all">
+            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+            <span>Connect on WhatsApp</span>
+          </a>
+          <button onclick="openBookingModal()" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-gold-600 to-gold-500 text-noir-950 font-bold text-xs uppercase tracking-wider shadow-gold-sm hover:scale-105 transition-all">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Package Builder & Treatment Selector (Zero Rates, Live <a href> WhatsApp Anchor) -->
+  <section id="rate-calculator" class="scroll-mt-20 py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-noir-900 border border-gold-600/25 rounded-3xl p-6 sm:p-10 lg:p-12 shadow-2xl relative overflow-hidden">
+      <!-- Background Ambient Glow -->
+      <div class="absolute -top-32 -right-32 w-80 h-80 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Package Builder Description -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-wider">
+            <i data-lucide="layers" class="w-4 h-4"></i>
+            <span>Personalized Package Builder</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+            Plan Your Makeover & Select Your Treatments
+          </h2>
+          <p class="text-neutral-400 text-sm leading-relaxed">
+            Select the treatments you desire to build your personalized salon day. Send your chosen services directly to our stylists on WhatsApp to lock in your preferred slots and consultation.
+          </p>
+
+          <div class="p-4 rounded-xl bg-noir-850/80 border border-white/5 space-y-2 mt-4">
+            <div class="flex items-center gap-2 text-gold-400 text-xs font-semibold">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+              <span>Special Salon Perk:</span>
+            </div>
+            <p class="text-neutral-300 text-xs">
+              Select 4 or more services to unlock an extra discount on appointment day.
+            </p>
+          </div>
+
+          <!-- Total Summary Box (Zero Rates) -->
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-noir-800 to-noir-850 border border-gold-500/40 space-y-4 mt-6">
+            <div class="flex items-center justify-between">
+              <span class="text-neutral-400 text-sm">Services Selected:</span>
+              <span id="calc-count" class="text-gold-300 font-bold text-base">0 Treatments</span>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-white/10 text-xs text-neutral-300">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Ready to book directly via WhatsApp with zero hassle</span>
+            </div>
+            <p class="text-[11px] text-neutral-400 italic">*Personalized consultation & custom recommendations provided on arrival.</p>
+            
+            <!-- Real <a href> Anchor for WhatsApp Deep Link (Never Blocked by Browsers) -->
+            <a id="calc-book-link" href="#" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-gold-600 via-gold-500 to-gold-400 text-noir-950 font-bold text-xs uppercase tracking-wider shadow-gold-sm hover:scale-[1.02] transition-all flex items-center justify-center gap-2 pointer-events-none opacity-50">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Book Selected Treatments via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+                                <!-- Interactive Checklist of Services -->
+        <div class="lg:col-span-7">
+          <div class="mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <h4 class="text-white font-serif text-lg font-bold flex items-center gap-2">
+                <span>Choose Your Treatments</span>
+                <span class="text-xs px-2 py-0.5 rounded-full bg-gold-500/20 text-gold-300 font-sans font-medium">113 Services</span>
+              </h4>
+              <p class="text-neutral-400 text-xs">Tap any service to select or unselect for your appointment.</p>
+            </div>
+            <!-- Search input -->
+            <div class="relative w-full sm:w-64">
+              <input type="text" oninput="handleCalcSearch(event)" placeholder="Search treatments..." class="w-full pl-8 pr-3 py-1.5 rounded-lg bg-noir-800 border border-white/10 text-white text-xs placeholder-neutral-500 focus:outline-none focus:border-gold-500" />
+              <i data-lucide="search" class="w-3.5 h-3.5 text-neutral-500 absolute left-2.5 top-2.5"></i>
+            </div>
+          </div>
+
+          <!-- Category filter buttons for calculator -->
+          <div class="flex items-center gap-1.5 flex-wrap mb-4">
+            <button onclick="filterCalcCategory('all', this)" class="calc-cat-btn px-3 py-1 rounded-full text-[11px] bg-gold-500 text-noir-950 font-bold transition-all">All (113)</button>
+            <button onclick="filterCalcCategory('hair', this)" class="calc-cat-btn px-3 py-1 rounded-full text-[11px] bg-noir-800 text-neutral-300 hover:text-white transition-all">Hair (26)</button>
+            <button onclick="filterCalcCategory('facial', this)" class="calc-cat-btn px-3 py-1 rounded-full text-[11px] bg-noir-800 text-neutral-300 hover:text-white transition-all">Facials (22)</button>
+            <button onclick="filterCalcCategory('waxing', this)" class="calc-cat-btn px-3 py-1 rounded-full text-[11px] bg-noir-800 text-neutral-300 hover:text-white transition-all">Waxing & Bleach (39)</button>
+            <button onclick="filterCalcCategory('nails', this)" class="calc-cat-btn px-3 py-1 rounded-full text-[11px] bg-noir-800 text-neutral-300 hover:text-white transition-all">Nails & Feet (19)</button>
+            <button onclick="filterCalcCategory('bridal', this)" class="calc-cat-btn px-3 py-1 rounded-full text-[11px] bg-noir-800 text-neutral-300 hover:text-white transition-all">Bridal (7)</button>
+          </div>
+
+          <div class="space-y-2.5 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar" id="calc-checklist">
+            <!-- Injected via JavaScript in app.js -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Before & After Transformation Slider -->
+  <section id="transformations" class="scroll-mt-20 py-24 bg-noir-900/60 border-t border-gold-600/15 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-[0.25em] mb-3">
+          <span class="w-6 h-[1px] bg-gold-500"></span>
+          <span>Proof of Mastery</span>
+          <span class="w-6 h-[1px] bg-gold-500"></span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">
+          Real Transformations. No Filters.
+        </h2>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
+          Slide horizontally to inspect actual before-and-after results on the exact same patrons in our Kharar studio.
+        </p>
+      </div>
+
+      <!-- Slider Tabs Selector -->
+      <div class="flex items-center justify-center gap-2 sm:gap-4 flex-wrap mb-10">
+        <button onclick="switchTransformation(0, this)" class="trans-tab active-trans-tab px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all">
+          Nanoplastia Glass Shine
+        </button>
+        <button onclick="switchTransformation(1, this)" class="trans-tab px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all">
+          Royal HD Bridal Glow
+        </button>
+        <button onclick="switchTransformation(2, this)" class="trans-tab px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all">
+          Groom Beard & Hair Fade
+        </button>
+      </div>
+
+      <!-- Interactive Split Comparison Canvas -->
+      <div class="max-w-4xl mx-auto">
+        <div id="ba-slider-container" class="relative w-full h-[380px] sm:h-[480px] md:h-[540px] rounded-3xl overflow-hidden border-2 border-gold-500/40 shadow-2xl select-none cursor-ew-resize">
+          
+          <!-- AFTER Image (Underneath) -->
+          <img id="ba-after-img" src="assets/hair_after.jpg" alt="After Transformation" class="absolute inset-0 w-full h-full object-cover select-none pointer-events-none" />
+          <div class="absolute bottom-6 right-6 px-3 py-1.5 rounded-lg bg-noir-950/80 border border-gold-400/50 text-gold-300 text-xs font-bold uppercase tracking-widest backdrop-blur-md">
+            After
+          </div>
+
+          <!-- BEFORE Image (Clipped on top) -->
+          <div id="ba-before-wrap" class="absolute inset-0 overflow-hidden" style="width: 50%;">
+            <img id="ba-before-img" src="assets/hair_before.jpg" alt="Before Transformation" class="absolute inset-0 w-full h-full object-cover select-none pointer-events-none max-w-none" style="width: 100%; height: 100%;" />
+            <div class="absolute bottom-6 left-6 px-3 py-1.5 rounded-lg bg-noir-950/80 border border-white/20 text-neutral-300 text-xs font-bold uppercase tracking-widest backdrop-blur-md">
+              Before
+            </div>
+          </div>
+
+          <!-- Sliding Divider Bar & Handle -->
+          <div id="ba-handle" class="absolute top-0 bottom-0 w-1 bg-gold-400 cursor-ew-resize pointer-events-none" style="left: 50%;">
+            <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-gold-400 text-noir-950 shadow-gold-glow flex items-center justify-center pointer-events-none">
+              <i data-lucide="chevrons-left-right" class="w-5 h-5"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Dynamic Description Box -->
+        <div class="mt-6 text-center max-w-2xl mx-auto space-y-2">
+          <h3 id="trans-title" class="font-serif text-xl sm:text-2xl font-bold text-white">
+            Nanoplastia Glass Shine Treatment
+          </h3>
+          <p id="trans-desc" class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+            Reversed dry, frizzy damage on the exact same hair length — delivering silky, mirror-glossy smooth straightness with deep protein reconstruction.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dedicated Royal Bridal & Groom Couture Suites (Zero Rates) -->
+  <section id="bridal" class="scroll-mt-20 py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-gradient-to-b from-noir-900 to-noir-950 border border-gold-500/40 rounded-3xl p-6 sm:p-12 lg:p-16 relative overflow-hidden shadow-2xl">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Bridal Pitch -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-bold uppercase tracking-[0.25em]">
+            <i data-lucide="crown" class="w-4 h-4"></i>
+            <span>Royal Wedding Artistry</span>
+          </div>
+          
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+            Look Unforgettable On Your Most Celebrated Day
+          </h2>
+
+          <p class="text-neutral-300 text-sm leading-relaxed">
+            Our specialized bridal couture suite provides an exclusive, VIP bridal chamber in Kharar. We blend traditional ceremonial majesty with contemporary high-definition airbrush perfection.
+          </p>
+
+          <div class="space-y-3">
+            <div class="flex items-center gap-3 text-xs text-neutral-300">
+              <i data-lucide="check" class="w-4 h-4 text-gold-400 shrink-0"></i>
+              <span>Complete consultation & pre-wedding skin prep timeline</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs text-neutral-300">
+              <i data-lucide="check" class="w-4 h-4 text-gold-400 shrink-0"></i>
+              <span>On-location bridal studio or private in-salon VIP suite</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs text-neutral-300">
+              <i data-lucide="check" class="w-4 h-4 text-gold-400 shrink-0"></i>
+              <span>High-end Kundan jewelry setting & master lehenga draping</span>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            <a href="https://wa.me/917986069459?text=Hi%20Luxe%20Lights!%20I%20am%20getting%20married%20and%20would%20like%20to%20consult%20for%20Bridal/Groom%20Packages." target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-600 via-gold-500 to-gold-400 text-noir-950 font-bold text-xs whitespace-nowrap shadow-gold-sm hover:scale-105 transition-all">
+              <i data-lucide="calendar" class="w-4 h-4 shrink-0"></i>
+              <span>Book Bridal Consultation</span>
+            </a>
+            <a href="tel:+917986069459" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-noir-850 border border-gold-500/40 text-gold-300 hover:text-white text-xs font-semibold whitespace-nowrap hover:border-gold-400 transition-all">
+              <i data-lucide="phone-call" class="w-3.5 h-3.5 shrink-0"></i>
+              <span>Call Bridal Concierge</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bridal Package Tiers (Zero Rates) -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          
+          <!-- Package 1 -->
+          <div class="p-6 rounded-2xl bg-noir-900 border border-gold-500/30 hover:border-gold-400 transition-all duration-300 relative group">
+            <div class="text-gold-400 text-xs font-semibold uppercase tracking-wider mb-2">Classic Radiance</div>
+            <h3 class="font-serif text-2xl font-bold text-white mb-2">HD Bridal Glow</h3>
+            <div class="text-lg font-serif font-bold text-gold-300 mb-4">Custom Bridal Styling <span class="text-xs font-sans text-neutral-400 font-normal block mt-0.5">Bespoke Wedding Day Session</span></div>
+            <ul class="space-y-2.5 text-xs text-neutral-300 mb-6">
+              <li class="flex items-center gap-2">
+                <i data-lucide="sparkle" class="w-3.5 h-3.5 text-gold-400"></i> Full HD Camera-Ready Makeup
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="sparkle" class="w-3.5 h-3.5 text-gold-400"></i> Designer Hair Bun / Open Wave Styling
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="sparkle" class="w-3.5 h-3.5 text-gold-400"></i> Dupatta Draping & Jewelry Setting
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="sparkle" class="w-3.5 h-3.5 text-gold-400"></i> Premium 3D Mink Lashes
+              </li>
+            </ul>
+            <button onclick="openBookingModal('HD Bridal Glow')" class="w-full py-2.5 rounded-lg bg-noir-800 border border-gold-500/30 text-gold-300 hover:bg-gold-500 hover:text-noir-950 font-semibold text-xs transition-all">
+              Reserve Package
+            </button>
+          </div>
+
+          <!-- Package 2 (Highlighted Royal) -->
+          <div class="p-6 rounded-2xl bg-gradient-to-b from-noir-850 to-noir-900 border-2 border-gold-500 shadow-gold-glow relative group">
+            <div class="absolute -top-3.5 left-6 px-3 py-1 rounded-full bg-gradient-to-r from-gold-600 to-gold-400 text-noir-950 text-[10px] font-extrabold uppercase tracking-widest">
+              Most Celebrated
+            </div>
+            <div class="text-gold-400 text-xs font-semibold uppercase tracking-wider mb-2 mt-1">Full Trousseau</div>
+            <h3 class="font-serif text-2xl font-bold text-white mb-2">Royal Empress Trousseau</h3>
+            <div class="text-lg font-serif font-bold text-gold-300 mb-4">Complete Bridal Journey <span class="text-xs font-sans text-neutral-400 font-normal block mt-0.5">Full Trousseau VIP Experience</span></div>
+            <ul class="space-y-2.5 text-xs text-neutral-300 mb-6">
+              <li class="flex items-center gap-2">
+                <i data-lucide="sparkle" class="w-3.5 h-3.5 text-gold-400"></i> Airbrush Wedding Makeup + Hair
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="sparkle" class="w-3.5 h-3.5 text-gold-400"></i> Sangeet or Engagement Look Included
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="sparkle" class="w-3.5 h-3.5 text-gold-400"></i> 7-Step Casmara Gold Facial & D-Tan
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="sparkle" class="w-3.5 h-3.5 text-gold-400"></i> Full Body Polish + Gel Extensions
+              </li>
+            </ul>
+            <button onclick="openBookingModal('Royal Empress Trousseau')" class="w-full py-2.5 rounded-lg bg-gradient-to-r from-gold-600 via-gold-500 to-gold-400 text-noir-950 font-bold text-xs uppercase tracking-wider shadow-sm hover:scale-[1.02] transition-all">
+              Reserve Royal Trousseau
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Authentic Indian Bride & Groom Visual Showcase Strip -->
+      <div class="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6 pt-10 border-t border-gold-600/20">
+        <div class="relative rounded-2xl overflow-hidden border border-gold-500/30 group h-80 shadow-xl">
+          <img src="assets/indian_bride.jpg" alt="Luxe Lights Indian Bride" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <span class="text-gold-300 text-xs font-bold uppercase tracking-wider">Master Bridal Artistry</span>
+            <div class="text-white font-serif text-lg font-bold">Kharar's Most Loved Bridal Destination</div>
+          </div>
+        </div>
+
+        <div class="relative rounded-2xl overflow-hidden border border-gold-500/30 group h-80 shadow-xl">
+          <img src="assets/indian_groom.jpg" alt="Luxe Lights Indian Groom" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <span class="text-gold-300 text-xs font-bold uppercase tracking-wider">Royal Groom Makeover</span>
+            <div class="text-white font-serif text-lg font-bold">Sherwani Contouring & Master Beard Fades</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Studio Gallery & Visual Lookbook (100% Unique Photos) -->
+  <section id="gallery" class="scroll-mt-20 py-24 bg-noir-900/40 border-t border-gold-600/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-end justify-between gap-6 mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-[0.25em] mb-3">
+            <span class="w-6 h-[1px] bg-gold-500"></span>
+            <span>Studio Lookbook</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+            Artistry In Every Angle
+          </h2>
+        </div>
+
+        <div class="flex items-center gap-2 flex-wrap" id="gallery-tabs">
+          <button onclick="filterGallery('all', this)" class="gal-tab active-tab px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all">All</button>
+          <button onclick="filterGallery('bridal', this)" class="gal-tab px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all">Bridal</button>
+          <button onclick="filterGallery('hair', this)" class="gal-tab px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all">Hair</button>
+          <button onclick="filterGallery('men', this)" class="gal-tab px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all">Men</button>
+          <button onclick="filterGallery('salon', this)" class="gal-tab px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all">Ambience</button>
+        </div>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Injected via JavaScript in app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Google Reviews & Testimonials Section -->
+  <section id="reviews" class="scroll-mt-20 py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-[0.25em] mb-3">
+        <span class="w-6 h-[1px] bg-gold-500"></span>
+        <span>Google Verified Feedback</span>
+        <span class="w-6 h-[1px] bg-gold-500"></span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">
+        Loved By 780+ Patrons Across Kharar
+      </h2>
+      <div class="flex items-center justify-center gap-2 text-gold-400 text-sm font-semibold">
+        <div class="flex">
+          <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-gold-400"></i>
+        </div>
+        <span>4.9 / 5.0 Star Rating</span>
+      </div>
+    </div>
+
+    <!-- Rotating carousel: 3 real reviews visible at a time, cycles through all verified 5-star Google reviews (populated + auto-advanced via JS) -->
+    <div class="overflow-hidden">
+      <div id="reviews-carousel-track" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+    </div>
+    <div id="reviews-carousel-dots" class="flex items-center justify-center gap-1.5 mt-8"></div>
+  </section>
+
+  <!-- Location & Contact Section -->
+  <section id="contact" class="scroll-mt-20 py-24 bg-noir-900/80 border-t border-gold-600/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Details -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-[0.25em]">
+            <span class="w-6 h-[1px] bg-gold-500"></span>
+            <span>Visit Our Studio</span>
+          </div>
+
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+            We’d Love To Welcome You
+          </h2>
+
+          <p class="text-neutral-300 text-sm leading-relaxed">
+            Conveniently situated opposite Khera Enclave on SBP Homes Road in Sector 126, Kharar. Ample front parking is available.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-white font-semibold text-sm">Studio Location</div>
+                <div class="text-neutral-400 text-xs leading-relaxed mt-0.5">
+                  SCO 22, Opp Khera Enclave, Near SBP Homes, Nijjar, Chajju Majra Rd, Sector 126, Kharar, Punjab 140301
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-white font-semibold text-sm">Phone & WhatsApp Concierge</div>
+                <div class="text-neutral-400 text-xs mt-0.5">
+                  <a href="tel:+917986069459" class="text-gold-300 hover:underline">079860 69459</a> / 
+                  <a href="https://wa.me/917986069459" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline">WhatsApp Direct</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-white font-semibold text-sm">Working Hours</div>
+                <div class="text-neutral-400 text-xs mt-0.5">
+                  Monday – Sunday: <strong class="text-neutral-200">9:00 AM – 9:00 PM</strong> (Open All 7 Days)
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pt-6 pb-2 flex items-center gap-4">
+            <a href="https://www.google.com/maps/place/Luxe+Lights+Unisex+Salon/@30.7306724,76.6668714,17z/data=!3m1!4b1!4m6!3m5!1s0x390fef9a5a76b6a5:0x675dc0c4642ad1ad!8m2!3d30.7306724!4d76.6694463!16s%2Fg%2F11s7wb5pxn?entry=ttu" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-full bg-gold-500 text-noir-950 font-bold text-xs uppercase tracking-wider flex items-center gap-2 hover:bg-gold-400 shadow-md transition-all">
+              <i data-lucide="navigation" class="w-4 h-4"></i>
+              <span>Get Directions on Maps</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="lg:col-span-6">
+          <div class="w-full h-80 sm:h-[400px] rounded-3xl overflow-hidden border border-gold-600/30 shadow-2xl bg-noir-850 relative">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.351664127022!2d76.6668714!3d30.7306724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef9a5a76b6a5%3A0x675dc0c4642ad1ad!2sLuxe%20Lights%20Unisex%20Salon!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border:0; filter: contrast(1.05) brightness(0.9);" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Luxury Footer -->
+  <footer class="bg-noir-950 border-t border-gold-600/20 pt-16 pb-28 sm:pb-12 text-neutral-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/5">
+        
+        <!-- Brand Column -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="Luxe Lights Unisex Salon" class="w-12 h-12 rounded-full object-contain shrink-0 drop-shadow-md" />
+            <div>
+              <span class="font-serif text-lg tracking-widest font-semibold text-white">LUXE LIGHTS</span>
+              <span class="block text-[8px] tracking-[0.25em] text-gold-400 uppercase font-semibold">Unisex Salon</span>
+            </div>
+          </div>
+          <p class="text-neutral-400 text-xs leading-relaxed max-w-sm">
+            Kharar's preferred unisex destination for bespoke hair transformations, luxury medi-facials, and cinematic bridal styling. Committed to uncompromising hygiene, artistry, and client pampering.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <!-- Instagram (Official Page) -->
+            <a href="https://www.instagram.com/luxelights.unisexsalon" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-noir-850 border border-white/15 flex items-center justify-center text-neutral-300 hover:text-gold-400 hover:border-gold-400 transition-all shadow-md group" aria-label="Instagram">
+              <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <!-- YouTube (Official Channel) -->
+            <a href="https://www.youtube.com/@hairartistankit3338" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-noir-850 border border-white/15 flex items-center justify-center text-neutral-300 hover:text-gold-400 hover:border-gold-400 transition-all shadow-md group" aria-label="YouTube">
+              <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a2.999 2.999 0 0 0-2.112-2.122C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.386.519A2.999 2.999 0 0 0 .502 6.186 31.26 31.26 0 0 0 0 12a31.26 31.26 0 0 0 .502 5.814 2.999 2.999 0 0 0 2.112 2.122c1.881.519 9.386.519 9.386.519s7.505 0 9.386-.519a2.999 2.999 0 0 0 2.112-2.122A31.26 31.26 0 0 0 24 12a31.26 31.26 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <!-- WhatsApp (Official Concierge) -->
+            <a href="https://wa.me/917986069459" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-noir-850 border border-white/15 flex items-center justify-center text-neutral-300 hover:text-emerald-400 hover:border-emerald-400 transition-all shadow-md group" aria-label="WhatsApp Concierge">
+              <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.301-.15-1.777-.877-2.052-.977-.276-.1-.476-.15-.677.15-.201.3-.777.977-.952 1.177-.176.2-.351.225-.652.075-.301-.15-1.272-.469-2.423-1.496-.897-.8-1.503-1.789-1.679-2.09-.176-.301-.019-.464.132-.614.136-.135.301-.351.451-.527.15-.175.2-.3.301-.501.1-.2.05-.376-.025-.526-.075-.15-.677-1.632-.927-2.235-.243-.587-.49-.508-.673-.518-.175-.008-.376-.01-.577-.01-.201 0-.527.075-.802.376-.276.3-1.053 1.029-1.053 2.509 0 1.48 1.078 2.909 1.229 3.11.15.2 2.122 3.24 5.141 4.544.718.31 1.279.496 1.716.635.722.23 1.379.198 1.899.12.58-.088 1.777-.727 2.027-1.43.251-.702.251-1.304.176-1.43-.075-.125-.276-.2-.577-.35zm-5.467 7.618h-.008a10.02 10.02 0 01-5.105-1.396l-.366-.217-3.797.996 1.014-3.7-.238-.378a10.025 10.025 0 01-1.536-5.289c0-5.545 4.512-10.057 10.063-10.057 2.689 0 5.216 1.048 7.118 2.951a10.008 10.008 0 012.946 7.112c0 5.546-4.512 10.058-10.065 10.058zm0-18.06c-4.42 0-8.016 3.596-8.016 8.018 0 1.413.369 2.793 1.068 4.004l.255.443-.635 2.317 2.373-.622.428.254a7.994 7.994 0 003.927 1.022c4.42 0 8.017-3.596 8.017-8.018 0-2.142-.834-4.156-2.35-5.671-1.516-1.516-3.53-2.35-5.672-2.35z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-white text-xs font-bold uppercase tracking-wider">Quick Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-gold-400 transition-colors">About Our Studio</a></li>
+            <li><a href="#services" class="hover:text-gold-400 transition-colors">Services Preview</a></li>
+            <li><a href="#transformations" class="hover:text-gold-400 transition-colors">Before & After</a></li>
+            <li><a href="#rate-calculator" class="hover:text-gold-400 transition-colors">Custom Package Builder</a></li>
+            <li><a href="#bridal" class="hover:text-gold-400 transition-colors">Bridal Trousseau</a></li>
+          </ul>
+        </div>
+
+        <!-- Popular Treatments (100% Authentic PDF Services) -->
+        <div class="space-y-3">
+          <h4 class="text-white text-xs font-bold uppercase tracking-wider">Popular Rituals</h4>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-gold-400 transition-colors">Women Hair Cut & Advance Styling</a></li>
+            <li><a href="#services" class="hover:text-gold-400 transition-colors">Global Hair Color & Highlights</a></li>
+            <li><a href="#services" class="hover:text-gold-400 transition-colors">Keratin & Smoothening Therapy</a></li>
+            <li><a href="#services" class="hover:text-gold-400 transition-colors">24K Gold & O3+ Facials</a></li>
+            <li><a href="#services" class="hover:text-gold-400 transition-colors">Italian Rica Liposoluble Wax</a></li>
+            <li><a href="#services" class="hover:text-gold-400 transition-colors">Gel & Acrylic Nail Extensions</a></li>
+            <li><a href="#bridal" class="hover:text-gold-400 transition-colors">Royal Bridal & Pre-Bridal Make UP</a></li>
+          </ul>
+        </div>
+
+        <!-- Working Hours & Contact -->
+        <div class="space-y-3">
+          <h4 class="text-white text-xs font-bold uppercase tracking-wider">Contact & Hours</h4>
+          <p class="text-neutral-300">
+            Open Everyday: <br />
+            <strong class="text-gold-400">9:00 AM – 9:00 PM</strong>
+          </p>
+          <p class="text-neutral-300">
+            Direct Phone: <br />
+            <a href="tel:+917986069459" class="text-white hover:text-gold-400 font-semibold">079860 69459</a>
+          </p>
+          <p class="text-neutral-400 text-[11px]">
+            SCO 22, Opp Khera Enclave, Sector 126, Kharar, Punjab
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-neutral-500">
+        <div>
+          © 2026 Luxe Lights Unisex Salon. All rights reserved. Managed by Ankit Rajoria.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#hero" class="text-gold-400 hover:text-gold-300">Back to top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Appointment Booking Modal -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden bg-noir-950/90 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-noir-900 border border-gold-500/40 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl my-8">
+      
+      <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-neutral-400 hover:text-white transition-colors" aria-label="Close Modal">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="space-y-2 mb-6">
+        <div class="text-gold-400 text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          <span>Direct Concierge Booking</span>
+        </div>
+        <h3 class="font-serif text-2xl font-bold text-white">
+          Reserve Your Salon Slot
+        </h3>
+        <p class="text-neutral-400 text-xs">
+          Submit your details to open instant WhatsApp booking confirmation with our front desk team.
+        </p>
+      </div>
+
+      <form id="booking-form" onsubmit="handleBookingSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-neutral-300 uppercase tracking-wider mb-1.5">Full Name *</label>
+          <input type="text" id="bm-name" required placeholder="Your Name" class="w-full px-4 py-3 rounded-xl bg-noir-800 border border-white/10 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors" />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-neutral-300 uppercase tracking-wider mb-1.5">Phone Number *</label>
+            <input type="tel" id="bm-phone" required placeholder="079860 69459" class="w-full px-4 py-3 rounded-xl bg-noir-800 border border-white/10 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-neutral-300 uppercase tracking-wider mb-1.5">Guest Category *</label>
+            <select id="bm-gender" class="w-full px-4 py-3 rounded-xl bg-noir-800 border border-white/10 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors">
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+              <option value="Bridal / Groom">Bridal / Groom</option>
+              <option value="Kids / Family">Kids / Family</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-neutral-300 uppercase tracking-wider mb-1.5">Primary Treatment *</label>
+          <select id="bm-service" class="w-full px-4 py-3 rounded-xl bg-noir-800 border border-white/10 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors">
+            <!-- Populated live from the real 113-item catalogue by populateBookingServiceOptions() in app.js -->
+            <option value="" disabled selected>Select a treatment</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-neutral-300 uppercase tracking-wider mb-1.5">Preferred Date *</label>
+            <input type="date" id="bm-date" required class="w-full px-4 py-3 rounded-xl bg-noir-800 border border-white/10 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-neutral-300 uppercase tracking-wider mb-1.5">Preferred Slot *</label>
+            <select id="bm-time" class="w-full px-4 py-3 rounded-xl bg-noir-800 border border-white/10 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors">
+              <option value="Morning (9:00 AM - 1:00 PM)">Morning (9:00 AM - 1:00 PM)</option>
+              <option value="Afternoon (1:00 PM - 5:00 PM)">Afternoon (1:00 PM - 5:00 PM)</option>
+              <option value="Evening (5:00 PM - 9:00 PM)">Evening (5:00 PM - 9:00 PM)</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-neutral-300 uppercase tracking-wider mb-1.5">Special Requests (Optional)</label>
+          <textarea id="bm-notes" rows="2" placeholder="Stylist preference, hair concerns, sensitivities..." class="w-full px-4 py-2.5 rounded-xl bg-noir-800 border border-white/10 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors"></textarea>
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-gold-600 via-gold-500 to-gold-400 text-noir-950 font-bold text-xs uppercase tracking-wider shadow-gold-sm hover:scale-[1.02] transition-all flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Confirm on WhatsApp (Instant)</span>
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Lightbox Modal for Gallery Images -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-noir-950/95 backdrop-blur-md flex items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="relative max-w-4xl max-h-[85vh] p-2" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-white hover:text-gold-400 transition-colors">
+        <i data-lucide="x" class="w-8 h-8"></i>
+      </button>
+      <img id="lightbox-img" src="" alt="Gallery Preview" class="rounded-2xl max-h-[80vh] w-auto mx-auto object-contain border border-gold-500/30 shadow-2xl" />
+      <div id="lightbox-caption" class="text-center text-neutral-300 text-sm font-medium mt-3"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="app.js"></script>
+</body>
+</html>

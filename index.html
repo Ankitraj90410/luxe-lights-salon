@@ -84,6 +84,32 @@
       transition: opacity 0.8s ease-in-out;
     }
   </style>
+  <!-- Google Ads tag: reuse the existing Contact conversion only. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11384077259"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11384077259');
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const highIntentLinkSelector = [
+        'a[href^="tel:"]',
+        'a[href*="wa.me"]',
+        'a[href*="whatsapp.com"]',
+        'a[href*="google.com/maps"]',
+        'a[href*="maps.app.goo.gl"]'
+      ].join(',');
+
+      document.addEventListener('click', function (event) {
+        const link = event.target.closest(highIntentLinkSelector);
+        if (!link) return;
+        gtag('event', 'conversion', {
+          'send_to': 'AW-11384077259/k139CO7y9ZkcEMv3rLQq'
+        });
+      }, true);
+    });
+  </script>
 </head>
 
 <body class="bg-noir-950 text-neutral-200 font-sans antialiased selection:bg-gold-500 selection:text-noir-950">
@@ -1269,29 +1295,3 @@
 </body>
 </html>
 
-  <!-- Google Ads tag: reuse the existing Contact conversion only. -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11384077259"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-11384077259');
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const highIntentLinkSelector = [
-        'a[href^="tel:"]',
-        'a[href*="wa.me"]',
-        'a[href*="whatsapp.com"]',
-        'a[href*="google.com/maps"]',
-        'a[href*="maps.app.goo.gl"]'
-      ].join(',');
-
-      document.addEventListener('click', function (event) {
-        const link = event.target.closest(highIntentLinkSelector);
-        if (!link) return;
-        gtag('event', 'conversion', {
-          'send_to': 'AW-11384077259/k139CO7y9ZkcEMv3rLQq'
-        });
-      }, true);
-    });
-  </script>

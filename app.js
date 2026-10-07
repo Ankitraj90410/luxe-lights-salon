@@ -1025,89 +1025,67 @@ const SERVICES_DATA = [
   }
 ];
 
-// --- 2. Real Transformation Before & After Data (Authentic Client Pairs) ---
-const TRANSFORMATIONS = [
-  {
-    title: 'Nanoplastia Glass Shine Treatment',
-    desc: 'Reversed dry, frizzy damage on the exact same hair length — delivering silky, mirror-glossy smooth straightness with deep protein reconstruction.',
-    beforeImg: 'assets/hair_before.jpg',
-    afterImg: 'assets/hair_after.jpg',
-  },
-  {
-    title: 'Royal HD Camera-Ready Indian Bridal Makeover',
-    desc: 'From natural bare skin to an exquisite royal Indian bride with luminous 4K HD finish, gold Kundan jewelry, and traditional dupatta setting.',
-    beforeImg: 'assets/bridal_before.jpg',
-    afterImg: 'assets/bridal_after.jpg',
-  },
-  {
-    title: 'Gentleman Beard Architecture & Precision Fade',
-    desc: 'Sculpted razor-sharp beard symmetry, beard spa conditioning, and seamless texture taper fade on the same patron.',
-    beforeImg: 'assets/groom_before.jpg',
-    afterImg: 'assets/groom_after.jpg',
-  }
-];
-
-// --- 3. Studio & Work Gallery Data (100% Unique Photos - Zero Repeated Images) ---
+// --- 2. Studio & Work Gallery Data (original Luxe Lights photos) ---
 const GALLERY_ITEMS = [
   {
     category: 'bridal',
-    caption: 'Royal Indian Bridal Couture & Floral Hair Artistry',
-    img: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1000&q=80'
+    caption: 'Bridal styling at Luxe Lights',
+    img: 'assets/studio-bridal-full.jpg'
   },
   {
-    category: 'hair',
-    caption: 'Luxe Lights Signature Hair Spa & Wash Station',
-    img: 'assets/salon_interior.jpg'
+    category: 'salon',
+    caption: 'Inside the Luxe Lights salon',
+    img: 'assets/studio-interior-main.jpg'
   },
   {
     category: 'men',
-    caption: 'Gentlemen Traditional Styling & Fine Beard Grooming',
-    img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=80'
+    caption: 'Men’s haircut at Luxe Lights',
+    img: 'assets/studio-men-cut.jpg'
   },
   {
     category: 'bridal',
-    caption: 'Intricate Bridal Jewellery & Regal Kundan Detailing',
-    img: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1000&q=80'
-  },
-  {
-    category: 'men',
-    caption: 'Precision Taper Fade & Sharp Edge Work',
-    img: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1000&q=80'
-  },
-  {
-    category: 'salon',
-    caption: 'Luxe Lights Styling Stations & Warm Ambient Glow',
-    img: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=80'
-  },
-  {
-    category: 'salon',
-    caption: 'Dedicated Private VIP Aesthetic Suite',
-    img: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80'
+    caption: 'A closer look at a bridal style',
+    img: 'assets/studio-bridal-closeup.jpg'
   },
   {
     category: 'hair',
-    caption: 'Master Stylist Sectioning & Precision Tools',
-    img: 'assets/salon_tools.jpg'
+    caption: 'Haircut in progress at the salon',
+    img: 'assets/studio-haircut.jpg'
   },
   {
     category: 'salon',
-    caption: 'Luxury Hair Washing & Reclining Spa Lounge',
-    img: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=1000&q=80'
+    caption: 'Styling stations at Luxe Lights',
+    img: 'assets/studio-color-stations.jpg'
+  },
+  {
+    category: 'salon',
+    caption: 'Salon products on display',
+    img: 'assets/studio-products.jpg'
   },
   {
     category: 'hair',
-    caption: 'Silky Bouncy Blowout & Polished Texture',
-    img: 'assets/hair_care.jpg'
+    caption: 'Long hair seen at a salon visit',
+    img: 'assets/studio-hair-natural.jpg'
   },
   {
-    category: 'bridal',
-    caption: 'Radiant Skin Prep & Medi-Facial Aesthetics',
-    img: 'assets/skin_treatment.jpg'
+    category: 'salon',
+    caption: 'Another view of the salon floor',
+    img: 'assets/studio-interior-side.jpg'
   },
   {
-    category: 'men',
-    caption: 'Gentlemen Scalp & Beard Revival Lounge',
-    img: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=80'
+    category: 'hair',
+    caption: 'Smooth hair finish captured at Luxe Lights',
+    img: 'assets/studio-hair-finish.jpg'
+  },
+  {
+    category: 'salon',
+    caption: 'Luxe Lights salon entrance',
+    img: 'assets/studio-storefront.jpg'
+  },
+  {
+    category: 'salon',
+    caption: 'A client visit at Luxe Lights',
+    img: 'assets/studio-client-visit.jpg'
   }
 ];
 
@@ -1644,85 +1622,7 @@ function updateCalculatorDisplay() {
   }
 }
 
-// --- 7. Interactive Before & After Slider ---
-let currentTransIndex = 0;
-let isDraggingBA = false;
-
-function initBeforeAfterSlider() {
-  const container = document.getElementById('ba-slider-container');
-  const beforeWrap = document.getElementById('ba-before-wrap');
-  const handle = document.getElementById('ba-handle');
-
-  if (!container || !beforeWrap || !handle) return;
-
-  const updatePosition = (clientX) => {
-    const rect = container.getBoundingClientRect();
-    let x = clientX - rect.left;
-    if (x < 0) x = 0;
-    if (x > rect.width) x = rect.width;
-
-    const percentage = (x / rect.width) * 100;
-    beforeWrap.style.width = `${percentage}%`;
-    handle.style.left = `${percentage}%`;
-  };
-
-  // Mouse Events
-  container.addEventListener('mousedown', (e) => {
-    isDraggingBA = true;
-    updatePosition(e.clientX);
-  });
-
-  window.addEventListener('mouseup', () => {
-    isDraggingBA = false;
-  });
-
-  window.addEventListener('mousemove', (e) => {
-    if (!isDraggingBA) return;
-    updatePosition(e.clientX);
-  });
-
-  // Touch Events
-  container.addEventListener('touchstart', (e) => {
-    isDraggingBA = true;
-    updatePosition(e.touches[0].clientX);
-  }, { passive: true });
-
-  window.addEventListener('touchend', () => {
-    isDraggingBA = false;
-  });
-
-  window.addEventListener('touchmove', (e) => {
-    if (!isDraggingBA) return;
-    updatePosition(e.touches[0].clientX);
-  }, { passive: true });
-}
-
-function switchTransformation(index, btn) {
-  currentTransIndex = index;
-  const data = TRANSFORMATIONS[index];
-  if (!data) return;
-
-  document.querySelectorAll('.trans-tab').forEach(b => b.classList.remove('active-trans-tab'));
-  btn.classList.add('active-trans-tab');
-
-  const beforeImg = document.getElementById('ba-before-img');
-  const afterImg = document.getElementById('ba-after-img');
-  const titleEl = document.getElementById('trans-title');
-  const descEl = document.getElementById('trans-desc');
-
-  if (beforeImg) beforeImg.src = data.beforeImg;
-  if (afterImg) afterImg.src = data.afterImg;
-  if (titleEl) titleEl.innerText = data.title;
-  if (descEl) descEl.innerText = data.desc;
-
-  // Reset to 50%
-  const beforeWrap = document.getElementById('ba-before-wrap');
-  const handle = document.getElementById('ba-handle');
-  if (beforeWrap) beforeWrap.style.width = '50%';
-  if (handle) handle.style.left = '50%';
-}
-
-// --- 8. Studio Gallery & Lightbox ---
+// --- 7. Studio Gallery & Lightbox ---
 function renderGallery(category = 'all') {
   const container = document.getElementById('gallery-grid');
   if (!container) return;
@@ -1732,7 +1632,7 @@ function renderGallery(category = 'all') {
     : GALLERY_ITEMS.filter(g => g.category === category);
 
   container.innerHTML = filtered.map(item => `
-    <div onclick="openLightbox('${item.img}', '${item.caption.replace(/'/g, "\\'")}')" class="relative group h-64 rounded-2xl overflow-hidden border border-white/5 cursor-pointer bg-noir-850">
+    <div onclick="openLightbox('${item.img}', '${item.caption.replace(/'/g, "\\'")}')" class="relative group aspect-[4/5] rounded-2xl overflow-hidden border border-white/5 cursor-pointer bg-noir-850">
       <img src="${item.img}" alt="${item.caption}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
       <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
         <span class="text-white text-xs font-semibold drop-shadow">${item.caption}</span>
@@ -1769,10 +1669,13 @@ function closeLightbox() {
   if (modal) modal.classList.add('hidden');
 }
 
-// --- 9. Appointment Booking Modal Controller (Temp Anchor Helper) ---
+// --- 8. Appointment Booking Modal Controller ---
+let bookingModalHistoryToken = null;
+
 function openBookingModal(serviceName = null) {
   const modal = document.getElementById('booking-modal');
   if (!modal) return;
+  const wasClosed = modal.classList.contains('hidden');
 
   const dateInput = document.getElementById('bm-date');
   if (dateInput) {
@@ -1795,13 +1698,30 @@ function openBookingModal(serviceName = null) {
 
   modal.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
+
+  if (wasClosed) {
+    bookingModalHistoryToken = `booking-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    const currentState = history.state && typeof history.state === 'object' ? history.state : {};
+    history.pushState({ ...currentState, bookingModalToken: bookingModalHistoryToken }, '', window.location.href);
+  }
 }
 
-function closeBookingModal() {
+function closeBookingModal(options = {}) {
   const modal = document.getElementById('booking-modal');
+  const wasOpen = modal && !modal.classList.contains('hidden');
   if (modal) modal.classList.add('hidden');
   document.body.style.overflow = 'auto';
+
+  const shouldReturnToPreviousEntry = !options.fromHistory &&
+    bookingModalHistoryToken && history.state?.bookingModalToken === bookingModalHistoryToken;
+  bookingModalHistoryToken = null;
+  if (wasOpen && shouldReturnToPreviousEntry) history.back();
 }
+
+window.addEventListener('popstate', () => {
+  const modal = document.getElementById('booking-modal');
+  if (modal && !modal.classList.contains('hidden')) closeBookingModal({ fromHistory: true });
+});
 
 function handleBookingSubmit(e) {
   e.preventDefault();
@@ -1885,7 +1805,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroTouchSwipe();
   renderServices('all');
   initCalculator();
-  initBeforeAfterSlider();
   renderGallery('all');
   initReviewsCarousel();
   populateBookingServiceOptions();
